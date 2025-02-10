@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>PourPower Bank</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <img src="../img/logoFalso.png" alt="logo del banco" height="70px" width="70px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title" id="offcanvasNavbarLabel">PourPower Bank</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Calculadora de dolar</a>
+                    </li>
+                  <!--  <li class="nav-item">
+                      <a class="nav-link" href="#">Simulador de prestamos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Seguros
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Seguros personales</a></li>
+                        <li><a class="dropdown-item" href="#">Seguros patrimoniales</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Seguros para empresas</a></li>
+                      </ul>
+                    </li>-->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <form class="formsInAndNew">
+        <h2>Crear nueva cuenta</h2>
+        <table class="userInputs">
+          <tr>
+              <td><label for="dni">Ingresa tu DNI:</label></td>
+          </tr>
+          <tr>
+              <td><input type="text" name="dni" id="dni"></td>
+          </tr>
+          <tr>
+            <td><label for="newUser">Crea un usuario:</label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="newUser" id="newUser"></td>
+          </tr>
+          <tr>
+              <td><label for="password">Crea una contraseña:</label></td>
+          </tr>
+          <tr>
+            <td><input type="password" name="passw" id="password" ><i class="bi bi-eye-slash-fill toggle-password" onclick="togglePassword()" style="margin-left: -25px; cursor: pointer;"></i><p style="margin-bottom: 5px;">La contraseña debe poseer al menos 8 caracteres, 1 mayúscula y 1 número</p></td>
+          </tr>
+          <tr>
+              <td><label for="email">Ingrese su correo electrónico:</label></td>
+          </tr>
+          <tr>
+              <td><input type="email" name="email" id="email"></td>
+          </tr>
+          <tr>
+              <td><label for="repeatEmail">Repita su correo electrónico:</label></td>
+          </tr>
+          <tr>
+              <td><input type="email" name="repeatEmail" id="repeatEmail"></td>
+          </tr>
+          <tr>
+              <td><label for="tel">Ingrese su teléfono móvil:</label></td>
+          </tr>
+          <tr>
+              <td><input type="tel" name="tel" id="tel"></td>
+          </tr>
+        </table>
+        <div class="condButton">
+            <label>
+                <input type="checkbox" name="termcond" id="termcond">
+                <p>Acepto los <a href="#">términos y condiciones</a></p>
+            </label>
+            <label>
+                <input type="checkbox" name="politPriv" id="politPriv">
+                <p>Acepto las <a href="#">políticas de privacidad</a></p>
+            </label>
+        </div>
+        <button class="buttonForm" type="submit">Aceptar</button>
+      </form>
+    </main>
+</body>
+<script src="../js/homepage.js"></script>
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
