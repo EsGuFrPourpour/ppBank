@@ -107,22 +107,30 @@ display: flex;
     margin-top: 80px;
 }
 .dolarArray{
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: baseline;
-    margin: 0px 6vw 12px 6vw;
-    color: var(--links-color)
+    justify-items: center;
+    margin: 0px 6px 12px 6px;
+    border: solid;
+    border-color: lightgray;
+    background-color: white;
+    box-shadow:6px 6px 20px rgba(34, 31, 48, 0.36);
 }
 .dolarArray h2{
-    font-size: var(--subtitle-sice);
+    font-size: 20px;
     margin: 5px 20px 5px 10px;
 }
 .dolarArray p{
-    font-size: 14px;
+    font-size: 11px;
     margin: 2px 10px 2px 10px;
 }
 #objetosCalc{
     display: grid;
     justify-content: center;
     margin: 6vw 6vw 0px 6vw;
+}
+#tipo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
